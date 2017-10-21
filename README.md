@@ -1,22 +1,14 @@
-# Automessages
+# Elixir simple mail
 
-**TODO: Add description**
+**Elixir email with bamboo (gmail)**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `automessages` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:automessages, "~> 0.1.0"}
-  ]
-end
-```
+mix deps.get #to get all dependencies
+mix run 
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/automessages](https://hexdocs.pm/automessages).
-
-# elixir_simple_mailer
+mix automessages.deliverEmail
+OR
+iex -S mix 
+Automessages.Email.send_email() |> Automessages.Mailer.deliver_now
